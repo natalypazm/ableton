@@ -1,0 +1,32 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+header {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 2px solid #eee; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 1.25rem; }
+    .nav__list--second li:first-child a {
+      color: blue; }
+    .nav__list--second li:last-child {
+      font-size: 16px; }
+    .nav__list:active {
+      color: #FF764D; }
+
+/*# sourceMappingURL=style.css.map */

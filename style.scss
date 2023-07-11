@@ -1,0 +1,42 @@
+$font-family: 'Quicksand', sans-serif;
+
+body,html{
+    padding:0;
+    margin: 0;
+    font-family: $font-family;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    &__list{
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        &--second li{
+            &:first-child a{
+                color:blue;
+            }
+            &:last-child{
+                font-size: 16px;
+            }
+        }
+        &:active{
+            color: #FF764D
+        }
+    }
+}
